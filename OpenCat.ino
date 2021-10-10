@@ -1,4 +1,4 @@
-/* Main Arduino sketch for OpenCat, the bionic quadruped walking robot.
+ /* Main Arduino sketch for OpenCat, the bionic quadruped walking robot.
    Updates should be posted on GitHub: https://github.com/PetoiCamp/OpenCat
 
    Rongzhong Li
