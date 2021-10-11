@@ -186,6 +186,7 @@ void meow(int repeat = 0, int pause = 200, int startF = 50,  int endF = 200, int
 #define K40 "tr"      //trot
 #define K41 "sit"     //sit
 #define K42 "str"     //stretch
+#define K43 "ct"     //for test
 
 #define K50 "hi"      //greeting
 #define K51 "pu"      //push up

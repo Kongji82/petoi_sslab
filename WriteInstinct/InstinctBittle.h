@@ -1,5 +1,5 @@
 #define BITTLE
-#define NUM_SKILLS 31
+#define NUM_SKILLS 32
 
 const char bdF[] PROGMEM = { 
 15, 0, 0, 1,
@@ -464,36 +464,54 @@ const char calib[] PROGMEM = {
 const char dropped[] PROGMEM = { 
 1, 0, -75, 1,
     0,  30,   0,   0,  -5,  -5,  15,  15, -75, -75,  45,  45,  60,  60, -30, -30,};
-const char lifted[] PROGMEM = { 
+const char lifted[] PROGMEM = {
 1, 0, 75, 1,
     0, -20,   0,   0,   0,   0,   0,   0,  60,  60,  75,  75,  45,  45,  75,  75,};
 const char rest[] PROGMEM = { 
 1, 0, 0, 1,
   -30, -80, -45,   0,  -3,  -3,   3,   3,  75,  75,  75,  75, -55, -55, -55, -55,};
 const char sit[] PROGMEM = { 
-1, 0, -30, 1,
+1, 0, 0, 1,
     0,   0, -45,   0,  -5,  -5,  20,  20,  45,  45, 105, 105,  45,  45, -45, -45,};
-const char str[] PROGMEM = { 
-1, 0, 20, 1,
-    0,  30,   0,   0,  -5,  -5,   0,   0, -75, -75,  30,  30,  60,  60,   0,   0,};
 
-// 물 마시는 동작
-// const char zero[] PROGMEM = {
-// -4, 0, -15, 1,
-//     1, 2, 3,
-//     0,   0, 0,   0,  0,  0,  0,  0, 105, 105, 45,  45, -45, -45, 45,  45, 5, 10, 0, 0,  // 내려가는 동작
-//     0,   0, 0,   0,  0,  0,  0,  0, 60, 60, 45,  45, -30, -30, 45,  45, 20, 0, 0, 0,  // 어깨 올라가기
-//     0,   0, 0,   0,  0,  0,  0,  0, 105, 105, 45,  45, -45, -45, 45,  45, 5, 0, 0, 0,  // 내려가는 동작
-    
-//     0,   0, 0,   0,  0,  0,  0,  0,  30,  30, 30, 30,  30,  30, 30, 30, 4, 0, 0, 0,     // 밸런스
-//     };
-const char zero[] PROGMEM = {
--2, 0, -15, 1,
+// 3번 
+const char str[] PROGMEM = {
+  -2, 0, -15, 1,
     0,0,0,
     0,   0, 0,   0,  0,  0,  0,  0, 105, 105, 45,  45, -45, -45, 45,  45, 5, 10, 0, 0,  // 내려가는 동작
     0,   0, 0,   0,  0,  0,  0,  0,  30,  30, 30, 30,  30,  30, 30, 30, 4, 0, 0, 0,     // 밸런스
-    };
 
+};
+// changeTest 
+const char ct[] PROGMEM = {
+  -2, 0, -15, 1,
+    0,0,0,
+    0,   0, 0,   0,  0,  0,  0,  0, 105, 105, 45,  45, -45, -45, 45,  45, 5, 10, 0, 0,  // 내려가는 동작
+    0,   0, 0,   0,  0,  0,  0,  0,  30,  30, 30, 30,  30,  30, 30, 30, 4, 0, 0, 0,     // 밸런스
+};
+
+const char zero[] PROGMEM = {
+  // 물마시기
+// -2, 0, -15, 1,
+//     0,0,0,
+//     0,   0, 0,   0,  0,  0,  0,  0, 105, 105, 45,  45, -45, -45, 45,  45, 5, 10, 0, 0,  // 내려가는 동작
+//     0,   0, 0,   0,  0,  0,  0,  0,  30,  30, 30, 30,  30,  30, 30, 30, 4, 0, 0, 0,     // 밸런스
+//     };
+// 구토
+// -3, 0, -15, 1,
+//     0,1,2,
+//     0,   0,   0,   0,   0,   0,   0,  0,  45,  45,  45,  45,  30,  30,  30,  30,  4,  0,  0,  0,     // 앞꿀렁
+//     0,   0,   0,   0,   0,   0,   0,  0,  30,  30,  15,  15,  30,  30,  30,  30,  4,  0,  0,  0,     // 뒷꿀렁
+//     0,   0,   0,   0,   0,   0,   0,  0, 105, 105,  45,  45, -45, -45,  45,  45,  5, 20,  0,  0,  // 내려가는 동작
+// 기침
+-4, 0, -15, 1,
+    0,3,3,
+    0,   0, 0,   0,  0,  0,  0,  0,  30,  30, 30, 30,  10,  10, 30, 30, 20, 0, 0, 0,  // 앞발
+    0,   0, 0,   0,  0,  0,  0,  0,  30,  30, 30, 30,  30,  30, 30, 30, 0, 0, 0, 0,     // 밸런스
+    0,   0, 0,   0,  0,  0,  0,  0,  30,  30, 30, 30,  30,  30, 10, 10, 0, 0, 0, 0,  // 뒤발
+    0,   0, 0,   0,  0,  0,  0,  0,  30,  30, 30, 30,  30,  30, 30, 30, 0, 20, 0, 0,     // 밸런스
+    
+};
 // 원본    
 // const char zero[] PROGMEM = {
 // 1, 0, -30, 1,
@@ -588,11 +606,12 @@ const char stp[] PROGMEM = {
     0,   0,   0,   0,   0,   0,   0,   0,  65, -10,  70, 125,  45,  30, -45,  90,	 8, 0, 0, 0,
     0,   0,   0,   0,   0,   0,   0,   0,  65, -10,  70,  60,  45,  30, -45, -45,	 8, 0, 0, 0,
 };
-  const char* skillNameWithType[]={"bdFI","bkI","bkLI","bkRI","crFI","crLI","crRI","trFI","trLI","trRI","vtI","wkFI","wkLI","wkRI","balanceI","buttUpI","calibI","droppedI","liftedI","restI","sitI","strI","zeroN","bfI","ckI","hiI","pdI","peeI","puI","rcI","stpI",};
-#if !defined(MAIN_SKETCH) || !defined(I2C_EEPROM)
+
+  const char* skillNameWithType[]={"bdFI","bkI","bkLI","bkRI","crFI","crLI","crRI","trFI","trLI","trRI","vtI","wkFI","wkLI","wkRI","balanceI","buttUpI","calibI","droppedI","liftedI","restI","sitI","strI","zeroN","bfI","ckI","hiI","pdI","peeI","puI","rcI","stpI", "ctN"};
+#if !defined(MAIN_SKETCH) || !defined(I2C_EEPROM) 
 		//if it's not the main sketch to save data or there's no external EEPROM, 
 		//the list should always contain all information.
-  const char* progmemPointer[] = {bdF, bk, bkL, bkR, crF, crL, crR, trF, trL, trR, vt, wkF, wkL, wkR, balance, buttUp, calib, dropped, lifted, rest, sit, str, zero, bf, ck, hi, pd, pee, pu, rc, stp, };
+  const char* progmemPointer[] = {bdF, bk, bkL, bkR, crF, crL, crR, trF, trL, trR, vt, wkF, wkL, wkR, balance, buttUp, calib, dropped, lifted, rest, sit, str, zero, bf, ck, hi, pd, pee, pu, rc, stp, ct,};
 #else	//only need to know the pointers to newbilities, because the intuitions have been saved onto external EEPROM,
 	//while the newbilities on progmem are assigned to new addresses
   const char* progmemPointer[] = {zero, };

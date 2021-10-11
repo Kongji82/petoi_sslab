@@ -1,4 +1,4 @@
- /* Main Arduino sketch for OpenCat, the bionic quadruped walking robot.
+   /* Main Arduino sketch for OpenCat, the bionic quadruped walking robot.
    Updates should be posted on GitHub: https://github.com/PetoiCamp/OpenCat
 
    Rongzhong Li
@@ -17,7 +17,7 @@
   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
   copies of the Software, and to permit persons to whom the Software is
   furnished to do so, subject to the following conditions:
-  The above copyright notice and this permission notice shall be included in all
+  The above copyright notice and this permission notice shall be included in all  
   copies or substantial portions of the Software.
   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -110,7 +110,8 @@ String translateIR() // takes action based on IR code received
 
     case 0xFF30CF: /*PTLF(" 1");  */          return (F(K40));
     case 0xFF18E7: /*PTLF(" 2");  */          return (F(K41));
-    case 0xFF7A85: /*PTLF(" 3");  */          return (F(K42));
+    case 0xFF7A85: /*PTLF(" 3");  */          return (F(K43));
+    
 
     case 0xFF10EF: /*PTLF(" 4");  */          return (F(K50));
     case 0xFF38C7: /*PTLF(" 5");  */          return (F(K51));
@@ -143,7 +144,7 @@ String translateIR() // takes action based on IR code received
 
     case 0x30: /*PTLF(" 1");  */          return (F(K40));
     case 0x18: /*PTLF(" 2");  */          return (F(K41));
-    case 0x7A: /*PTLF(" 3");  */          return (F(K42));
+    case 0x7A: /*PTLF(" 3");  */          return (F(K43));
 
     case 0x10: /*PTLF(" 4");  */          return (F(K50));
     case 0x38: /*PTLF(" 5");  */          return (F(K51));
