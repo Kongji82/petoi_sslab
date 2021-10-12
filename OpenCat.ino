@@ -110,14 +110,14 @@ String translateIR() // takes action based on IR code received
 
     case 0xFF30CF: /*PTLF(" 1");  */          return (F(K40));
     case 0xFF18E7: /*PTLF(" 2");  */          return (F(K41));
-    case 0xFF7A85: /*PTLF(" 3");  */          return (F(K43));
+    case 0xFF7A85: /*PTLF(" 3");  */          return (F(K42));
     
 
     case 0xFF10EF: /*PTLF(" 4");  */          return (F(K50));
     case 0xFF38C7: /*PTLF(" 5");  */          return (F(K51));
     case 0xFF5AA5: /*PTLF(" 6");  */          return (F(K52));
 
-    case 0xFF42BD: /*PTLF(" 7");  */          return (F(K60));
+    case 0xFF42BD: /*PTLF(" 7");  */          return (F(K43));
     case 0xFF4AB5: /*PTLF(" 8");  */          return (F(K61));
     case 0xFF52AD: /*PTLF(" 9");  */          return (F(K62));
 
@@ -144,13 +144,13 @@ String translateIR() // takes action based on IR code received
 
     case 0x30: /*PTLF(" 1");  */          return (F(K40));
     case 0x18: /*PTLF(" 2");  */          return (F(K41));
-    case 0x7A: /*PTLF(" 3");  */          return (F(K43));
+    case 0x7A: /*PTLF(" 3");  */          return (F(K42));
 
     case 0x10: /*PTLF(" 4");  */          return (F(K50));
     case 0x38: /*PTLF(" 5");  */          return (F(K51));
     case 0x5A: /*PTLF(" 6");  */          return (F(K52));
 
-    case 0x42: /*PTLF(" 7");  */          return (F(K60));
+    case 0x42: /*PTLF(" 7");  */          return (F(K43));
     case 0x4A: /*PTLF(" 8");  */          return (F(K61));
     case 0x52: /*PTLF(" 9");  */          return (F(K62));
 
