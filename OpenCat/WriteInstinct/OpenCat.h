@@ -188,8 +188,10 @@ void meow(int repeat = 0, int pause = 200, int startF = 50,  int endF = 200, int
 #define K42 "str"     //stretch
 #define K43 "ct"     //for test
 
-#define K50 "hi"      //greeting
-#define K51 "pu"      //push up
+// #define K50 "hi"      //greeting
+#define K50 "cst_trb" // 다리떨기
+// #define K51 "pu"      //push up
+#define K51 "custom_lie" // 배깔고 눕기 
 #define K52 "pee"     //standng with three legs
 
 #ifdef NYBBLE

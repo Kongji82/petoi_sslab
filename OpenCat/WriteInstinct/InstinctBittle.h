@@ -1,5 +1,5 @@
 #define BITTLE
-#define NUM_SKILLS 32
+#define NUM_SKILLS 34
 
 const char bdF[] PROGMEM = { 
 15, 0, 0, 1,
@@ -512,6 +512,7 @@ const char pd[] PROGMEM = {
    45,   0,   0,   0,   0,   0,   0,   0,  45, -75,  90,  25, -60,   0, -60,  30,	30, 0, 0, 0,
    45,   0,   0,   0,   0,   0,   0,   0,  45, -75,  90,  25, -60,   0, -60,  45,	16,20, 0, 0,
 };
+// push up
 const char pu[] PROGMEM = { 
 -8, 0, -15, 1,
  6, 7, 3, 
@@ -524,6 +525,7 @@ const char pu[] PROGMEM = {
     0,   0,   0,   0,   0,   0,   0,   0,  30,  30,  95,  95,  60,  60,  60,  60,	 6, 1, 0, 0,
    30,   0,   0,   0,   0,   0,   0,   0,  75,  70,  80,  80, -50, -50,  60,  60,	 8, 0, 0, 0,
 };
+
 const char rc[] PROGMEM = { 
 -3, 0, 0, 2,
  0, 0, 0, 
@@ -580,6 +582,25 @@ const char str[] PROGMEM = {
     0,   0,   0,   0,   0,   0,   0,  0,  80,  80,   0,   0, -45, -45,  30,  30,  5, 20,  0,  0,  // 내려가는 동작
     0,   0,   0,   0,   0,   0,   0,   0,  30,  30,  30,  30,  30,  30,  30,  30, 5, 40, 0, 0,   // 밸런스
 };
+// 4번
+// 다리 떨기
+const char cst_trb[] PROGMEM = {
+  -4, 0, 0, 1,
+   1, 3, 3,
+      0,   0,   0,   0,   0,   0,   0,   0,  30,  30,  30,  30,  30,  30,  30,  30, 7, 20, 0, 0,     // 밸런스
+      0,   0,   0,   0,   0,   0,   0,   0,  30,  30,  20,  30,  30,  30,  40,  30, 120,  0, 0, 0,    // 다리떨기 1
+      0,   0,   0,   0,   0,   0,   0,   0,  30,  30,  40,  30,  30,  30,  20,  30, 120,  0, 0, 0,    // 다리떨기 2
+      0,   0,   0,   0,   0,   0,   0,   0,  30,  30,  30,  30,  30,  30,  30,  30, 7, 20, 0, 0,     // 밸런스
+};
+// 5번
+// 배 깔고 눕고, 다시 서기
+const char custom_lie[] PROGMEM = {
+  -3, 0, 0, 1,
+   0, 0, 0,
+      0,   0,   0,   0,   0,   0,   0,   0,  30,  30,  30,  30,  30,  30,  30,  30, 7,  0, 0, 0,     // 밸런스
+    -30, -80, -45,   0,  -3,  -3,   3,   3,  75,  75,  75,  75, -55, -55, -55, -55, 7, 60, 0, 0,    // sit
+      0,   0,   0,   0,   0,   0,   0,   0,  30,  30,  30,  30,  30,  30,  30,  30, 7,  0, 0, 0,     // 밸런스
+};
 // 6번
 // 배뇨
 const char pee[] PROGMEM = { 
@@ -622,34 +643,11 @@ const char zero[] PROGMEM = {
     0,   0, 0,   0,  0,  0,  0,  0,  30,  30, 30, 30,  30,  30, 30, 30, 0, 80, 0, 0,     // 밸런스
 };
 
-// // 기침 -> 마운팅 동작
-// // 9번
-// const char zero[] PROGMEM = {
-// -1, 0, -15, 1,
-//     0,0,0,
-// //  0   /1 /2   /3  /4  /5  /6  /7  /8   /9   /10  /11  /12  /13  /14  /15
-//     // 0,   0, 0,   0,  0,  0,  0,  0,  0,   0,   0,   0,   0,   0,   0,   0, 3, 0, 0, 0,     // eq
-
-//     // 0,   0, 0,   0,  0,  0,  0,  0,  75,  75,  75,  75, -55, -55, -55, -55, 3, 0, 0, 0,     // rest
-//     // 0,   0, 0,   0,  0,  0,  0,  0,  50,  50,  48,  48, -75, -75, -10, -10, 3, 60, 0, 0,     // 뒷다리 올리기
-//     // 0,   0, 0,   0,  0,  0,  0,  0,  50,  50,  30,  30,  50,  50,  90,  90, 0, 1, 0, 0,     // 일자서기 - 튀기
-//     // 0,   0, 0,   0,  0,  0,  0,  0,  30,  30,  30,  30,  50,  50,  90,  90, 0, 1, 0, 0,     // 일자서기 - 튀기
-//     // 0,   0, 0,   0,  0,  0,  0,  0,  30,  30,  30,  30,  50,  50,  90,  90, 0, 127, 0, 0,     // 일자서기 - 기다리기
-
-//     0,   0, 0,   0,  0,  0,  0,  0,  90,  90,  90,  90,  -90,  -90,  -90,  -90, 5, 30, 0, 0,     // 엎드리기
-// //  0,   0, 0,   0,  0,  0,  0,  0,   0,   0,  90,  90,   90,   90,  -90,  -90, 0,  2, 0, 0,     // 앞발 피기(차기) - 무게중심이 뒤로 가게
-//     0,   0, 0,   0,  0,  0,  0,  0,  50,  50,  90,  90,  -40,  -40,  -90,  -90, 0,  1, 0, 0,     // 앞발 피기(차기) - 무게중심이 뒤로 가게
-//     0,   0, 0,   0,  0,  0,  0,  0,   0,   0,  90,  90,   90,   90,  -90,  -90, 0,  1, 0, 0,     // 앞발 피기(차기) - 무게중심이 뒤로 가게
-
-//     0,   0, 0,   0,  0,  0,  0,  0,  90,  90,  30,  30,  -45,  -45,   50,   50, 0,  100, 0, 0,     // 앞발 구부리고 뒷발 피기
-
-// };
-
-  const char* skillNameWithType[]={"bdFI","bkI","bkLI","bkRI","crFI","crLI","crRI","trFI","trLI","trRI","vtI","wkFI","wkLI","wkRI","balanceI","buttUpI","calibI","droppedI","liftedI","restI","sitI","strI","zeroN","bfI","ckI","hiI","pdI","peeI","puI","rcI","stpI", "ctI"};
+  const char* skillNameWithType[]={"bdFI","bkI","bkLI","bkRI","crFI","crLI","crRI","trFI","trLI","trRI","vtI","wkFI","wkLI","wkRI","balanceI","buttUpI","calibI","droppedI","liftedI","restI","sitI","strI","zeroN","bfI","ckI","hiI","pdI","peeI","rcI","stpI", "ctI","custom_lieI","cst_trbI"};
 #if !defined(MAIN_SKETCH) || !defined(I2C_EEPROM) 
 		//if it's not the main sketch to save data or there's no external EEPROM, 
 		//the list should always contain all information.
-  const char* progmemPointer[] = {bdF, bk, bkL, bkR, crF, crL, crR, trF, trL, trR, vt, wkF, wkL, wkR, balance, buttUp, calib, dropped, lifted, rest, sit, str, zero, bf, ck, hi, pd, pee, pu, rc, stp, ct,};
+  const char* progmemPointer[] = {bdF, bk, bkL, bkR, crF, crL, crR, trF, trL, trR, vt, wkF, wkL, wkR, balance, buttUp, calib, dropped, lifted, rest, sit, str, zero, bf, ck, hi, pd, pee, rc, stp, ct, custom_lie, cst_trb};
 #else	//only need to know the pointers to newbilities, because the intuitions have been saved onto external EEPROM,
 	//while the newbilities on progmem are assigned to new addresses
   const char* progmemPointer[] = {zero, };
