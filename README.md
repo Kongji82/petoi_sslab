@@ -12,7 +12,7 @@
 
 [https://github.com/jrowberg/i2cdevlib](https://github.com/jrowberg/i2cdevlib) 에서 파일을 다운로드 받아야 합니다.
 
-![KakaoTalk_Photo_2021-11-04-15-13-15.png](Petoi%20Document%2077d991f84f4c4c5f95e2127033fc8e7c/KakaoTalk_Photo_2021-11-04-15-13-15.png)
+![KakaoTalk_Photo_2021-11-04-15-13-15](https://user-images.githubusercontent.com/62738554/141056556-8ef37528-65a6-4db1-9e06-276998cc2329.png)
 
 [https://bittle.petoi.com/4-configuration](https://bittle.petoi.com/4-configuration) 에서 4.2절 참고
 
@@ -20,8 +20,7 @@
 
 포트가 안 잡히는 경우가 있습니다. 그런 상황에서는 NyBoard 드라이버 세팅이 필요합니다.
 
-![스크린샷 2021-11-04 오후 3.21.52.png](Petoi%20Document%2077d991f84f4c4c5f95e2127033fc8e7c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2021-11-04_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.21.52.png)
-
+<img width="862" alt="스크린샷 2021-11-04 오후 3 21 52" src="https://user-images.githubusercontent.com/62738554/141056718-9c9a1bfe-57d3-48c3-9e09-247c717c200d.png">
 [https://bittle.petoi.com/4-configuration](https://bittle.petoi.com/4-configuration) 4.2.5절 참고
 
 # 4. 실행
@@ -34,7 +33,9 @@
 
 해당 동작을 반복시키기 위해서는 두번째 열 수정을 하면 반복 횟수를 수정할 수 있습니다.
 
-![스크린샷 2021-11-04 오후 3.44.15.png](Petoi%20Document%2077d991f84f4c4c5f95e2127033fc8e7c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2021-11-04_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.44.15.png)
+<img width="871" alt="스크린샷 2021-11-04 오후 3 44 15" src="https://user-images.githubusercontent.com/62738554/141056928-a34af320-5a35-4d3f-b8d9-bc7ba5b93fe5.png">
+
+
 
 → **0번 프레임부터 8번 프레임까지 100번 반복**을 정의합니다.
 
@@ -46,13 +47,12 @@ WriteInstinct.ino 파일을 업로드하고, Serial Monitor를 통해 값을 입
 
 **Line ending 없음**으로 설정함에 유의해야 합니다.
 
-![KakaoTalk_Photo_2021-11-04-15-56-48.png](Petoi%20Document%2077d991f84f4c4c5f95e2127033fc8e7c/KakaoTalk_Photo_2021-11-04-15-56-48.png)
+![KakaoTalk_Photo_2021-11-04-15-56-48](https://user-images.githubusercontent.com/62738554/141057060-6836419f-4442-48d0-b32a-c337081deced.png)
+![KakaoTalk_Photo_2021-11-04-15-57-06](https://user-images.githubusercontent.com/62738554/141057062-d36ecdc4-dc2e-4745-8538-cb05d7b9fe7a.png)
+![KakaoTalk_Photo_2021-11-04-15-57-28](https://user-images.githubusercontent.com/62738554/141057064-361db79b-a6d2-4e7f-9db7-4a0cb1b4e2a3.png)
+![KakaoTalk_Photo_2021-11-04-15-57-52](https://user-images.githubusercontent.com/62738554/141057066-8b424437-1aff-4afc-8064-02e46651bb23.png)
 
-![KakaoTalk_Photo_2021-11-04-15-57-06.png](Petoi%20Document%2077d991f84f4c4c5f95e2127033fc8e7c/KakaoTalk_Photo_2021-11-04-15-57-06.png)
 
-![KakaoTalk_Photo_2021-11-04-15-57-28.png](Petoi%20Document%2077d991f84f4c4c5f95e2127033fc8e7c/KakaoTalk_Photo_2021-11-04-15-57-28.png)
-
-![KakaoTalk_Photo_2021-11-04-15-57-52.png](Petoi%20Document%2077d991f84f4c4c5f95e2127033fc8e7c/KakaoTalk_Photo_2021-11-04-15-57-52.png)
 
 위와 같은 결과가 나오면 완료된 것 입니다.
 
